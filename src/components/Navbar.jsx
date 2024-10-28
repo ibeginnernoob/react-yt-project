@@ -1,5 +1,7 @@
+import SearchBar from './SearchBar.jsx';
+
 function Navbar(){
-    return <div>
+    return <div className='flex flex-row justify-between items-center px-4'>
         <div className="flex flex-row items-center">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
@@ -26,7 +28,29 @@ function Navbar(){
             </svg>
         </div>
         <div>
-            
+            <SearchBar />
+        </div>
+        <div className='h-10 w-10 rounded-full bg-gray-100 flex justify-center items-center'>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-5">
+                <path d="M8.25 4.5a3.75 3.75 0 1 1 7.5 0v8.25a3.75 3.75 0 1 1-7.5 0V4.5Z" />
+                <path d="M6 10.5a.75.75 0 0 1 .75.75v1.5a5.25 5.25 0 1 0 10.5 0v-1.5a.75.75 0 0 1 1.5 0v1.5a6.751 6.751 0 0 1-6 6.709v2.291h3a.75.75 0 0 1 0 1.5h-7.5a.75.75 0 0 1 0-1.5h3v-2.291a6.751 6.751 0 0 1-6-6.709v-1.5A.75.75 0 0 1 6 10.5Z" />
+            </svg>
+        </div>
+        <div className='flex flex-row items-center'>
+            <svg xmlns="http://www.w3.org/2000/svg" strokeWidth={1.5} viewBox="0 0 24 24" focusable="false" aria-hidden="true" style={{
+            pointerEvents: "none",
+            display: "inherit", 
+            width: "25px",
+            height: "25px"
+            }}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M14 13h-3v3H9v-3H6v-2h3V8h2v3h3v2zm3-7H3v12h14v-6.39l4 1.83V8.56l-4 1.83V6m1-1v3.83L22 7v8l-4-1.83V19H2V5h16z"></path>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
+            </svg>
+            <div className='h-8 w-8 rounded-full bg-black'>
+
+            </div>
         </div>
     </div>
 }
