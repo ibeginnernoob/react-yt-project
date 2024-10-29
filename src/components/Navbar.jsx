@@ -2,7 +2,7 @@ import SearchBar from './SearchBar.jsx';
 
 function Navbar(){
     return <div className='flex flex-row justify-between items-center px-4'>
-        <div className="flex flex-row items-center">
+        <div className="flex flex-row items-center justify-between w-[150px]">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
             </svg>
@@ -27,16 +27,16 @@ function Navbar(){
                 </g>
             </svg>
         </div>
-        <div>
+        <div className='flex flex-row items-center justify-between w-[610px]'>
             <SearchBar />
-        </div>
-        <div className='h-10 w-10 rounded-full bg-gray-100 flex justify-center items-center'>
+            <div className='h-10 w-10 rounded-full bg-gray-100 flex justify-center items-center'>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-5">
                 <path d="M8.25 4.5a3.75 3.75 0 1 1 7.5 0v8.25a3.75 3.75 0 1 1-7.5 0V4.5Z" />
                 <path d="M6 10.5a.75.75 0 0 1 .75.75v1.5a5.25 5.25 0 1 0 10.5 0v-1.5a.75.75 0 0 1 1.5 0v1.5a6.751 6.751 0 0 1-6 6.709v2.291h3a.75.75 0 0 1 0 1.5h-7.5a.75.75 0 0 1 0-1.5h3v-2.291a6.751 6.751 0 0 1-6-6.709v-1.5A.75.75 0 0 1 6 10.5Z" />
             </svg>
         </div>
-        <div className='flex flex-row items-center'>
+        </div>
+        <div className='flex flex-row items-center justify-between w-[150px]'>
             <svg xmlns="http://www.w3.org/2000/svg" strokeWidth={1.5} viewBox="0 0 24 24" focusable="false" aria-hidden="true" style={{
             pointerEvents: "none",
             display: "inherit", 
